@@ -1,0 +1,48 @@
+Nume: FLORIN-ION SMEU					   Data: 5 aprilie 2018
+Grupa: 322CD
+
+
+		  	  =======================
+			  Paradigme de Programare
+			         . TEMA1 .
+			       Mini Database
+			  =======================
+
+
+	In cadrul acestei teme am implementat un sistem minimalist de gestiune
+a unei baze de date, utilizand limbajul Racket. 
+	
+	Reprezentare
+	------------
+	Baza de date a fost reprezentata ca o lista de tabele. Un tabel 
+contine, la randul lui, o lista de elemente. Primul element este chiar numele
+tabelei. Al doilea element dintr-un tabel il reprezinta o lista cu numele 
+tuturor coloanelor sale. Urmatoarele elemente ale tabelului sunt inregistrarile
+pe care le contine. Ele vor fi liste de elemente. 
+	Spre exemplu, o baza de date cu doua tabele ar putea arata astfel:
+	
+(define db
+  (list (list "Studenți"
+             (list "Număr matricol" "Nume" "Prenume" "Grupă" "Medie")
+             (list 123 "Ionescu" "Gigel" "321CA" 9.82)
+             (list 124 "Popescu" "Maria" "321CB" 9.91)
+             (list 125 "Popa" "Ionel" "321CC" 9.99)
+             (list 126 "Georgescu" "Ioana" "321CD" 9.87))
+        (list "Cursuri"
+             (list "Anul" "Semestru" "Disciplină" "Număr credite" "Număr teme")
+             (list "I" "I" "Programarea calculatoarelor" 5 2)
+             (list "II" "II" "Paradigme de programare" 6 3)
+             (list "III" "I" "Algoritmi paraleli și distribuiți" 5 3)
+             (list "IV" "I" "Inteligență artificială" 6 3)
+             (list "I" "II" "Structuri de date" 5 3)
+             (list "III" "II" "Baze de date" 5 0))))
+
+	Operatii implementate
+	---------------------
+	Pe langa anumite functii auxiliare (elemente de control), am 
+implementat operatiile:
+	- insert;
+	- simple-select;
+	- select;
+	- update;
+	- delete.
