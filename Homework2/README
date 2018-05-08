@@ -1,0 +1,26 @@
+Email:florin.ion.smeu@gmail.com
+Data: 2 mai 2018
+
+                       =======================
+                       Paradigme de Programare
+                             . TEMA 2 .
+                         Game about Squares
+                       =======================  
+                    
+  In cadrul acestei teme am implementat jocul Game about Squares utilizand
+mecanisme functionale, de tipuri si de evaluare lenesa din limbajul 
+Haskell. 
+  Jocul contine trei tipuri de obiecte, dispuse pe o tabla infinita. Acestea
+pot fi: 
+  - patrate (ele pot fi deplasate in directia sagetii pe care o contin);
+  - sageti (odata ce un patrat ajunge pe o pozitie pe care se afla deja o
+            sageata, orientarea acestuia se schimba conform cu sageata);
+  - cercuri (reprezinta pozitii in care patratele trebuie sa ajunga pentru a 
+             se incheia cu succes jocul).
+  Scopul jocului este aducerera tuturor patratelor pe pozitiile cercurilor 
+de aceeasi culoare cu ele.   
+  
+             
+   
+  
+                    
